@@ -72,7 +72,7 @@ export default function Home() {
                     <form className="space-y-6" action="" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="cpf" className="block text-sm font-medium leading-6 text-gray-900">
-                                CPF
+                                CPF / CNPJ
                             </label>
                             <div className='mt-2'>
                                 <input

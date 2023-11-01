@@ -4,6 +4,7 @@ import { nextAuthOptions } from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import ButtonLogou from "@/components/buttons/ButtonLogout";
+import Navbar from "@/components/navbar";
 
 interface PrivateLayoutProps {
     children: ReactNode
@@ -18,9 +19,9 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
 
     return (
         <>
-            <Link replace={true} href='/home'>Home</Link>
-            <Link replace={true} href='/transferir'>Transferir</Link>
-            <ButtonLogou/>
+            <header className="bg-indigo-600 text-white">
+                <Navbar />
+            </header>
             {children}
         </>
     )

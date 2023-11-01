@@ -1,5 +1,7 @@
 'use client'
 
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { signOut } from "next-auth/react"
 
 export default function ButtonLogou() {
@@ -11,5 +13,6 @@ export default function ButtonLogou() {
         window.location.reload()
     }
 
-    return <button onClick={logout}>Sair</button>
+    return <FontAwesomeIcon className="text-3xl cursor-pointer text-white hover:text-gray-200" onClick={logout} icon={faArrowRightFromBracket}  />
+        
 }
