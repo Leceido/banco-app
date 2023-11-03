@@ -19,10 +19,13 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
 
     return (
         <>
-            <header className="bg-indigo-600 text-white">
+            <header className="bg-indigo-600 text-white w-full">
                 <Navbar />
             </header>
-            {children}
+            <div className="lg:mx-60 lg:my-20 2xl:w-3/4">
+                {children}
+            </div>
+            
         </>
     )
 

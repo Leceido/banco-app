@@ -13,6 +13,6 @@ export default function ButtonLogou() {
         window.location.reload()
     }
 
-    return <FontAwesomeIcon className="text-3xl cursor-pointer text-white hover:text-gray-200" onClick={logout} icon={faArrowRightFromBracket}  />
+    return <FontAwesomeIcon className="text-2xl sm:text-3xl cursor-pointer text-white hover:text-gray-200" onClick={logout} icon={faArrowRightFromBracket}  />
         
 }
