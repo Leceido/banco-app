@@ -65,11 +65,25 @@ export default function DepositarComponent({token}: any) {
     }
 
     return (
-        <div>
-            <h1>Depositar Dinheiro</h1>
-            <form action="">
-                <input type="number" name="valor" id="valor" onChange={(e) => setValor(Number(e.target.value))}/>
-                <button onClick={deposito}>Confirmar</button>
+        <div className="rounded-lg w-full py-3 shadow-md">
+            <form action="" className="space-x-2">
+                <div className="flex flex-col space-y-4">
+                    <div>
+                        <label className="" htmlFor="valor">R$ </label>
+                        <input
+                            className="px-1 w-[50%] outline-none" 
+                            type="number" 
+                            name="valor" 
+                            id="valor" 
+                            min="1"
+                            placeholder="00,00"
+                            onChange={(e) => setValor(Number(e.target.value))}
+                        />
+                    </div>
+                    <div>
+                        <button className="rounded-full bg-indigo-600 hover:bg-indigo-500 p-3 text-white text-sm md:text-lg w-24" onClick={deposito}>Depositar</button>
+                    </div>
+                </div>
             </form>
         </div>
     )
