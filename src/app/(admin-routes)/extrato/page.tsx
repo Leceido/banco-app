@@ -19,9 +19,9 @@ export default async function Extrato() {
 
         if(response.ok) {
             return (
-                <div>
-                    <h1>Extrato Bancario</h1>
-                    <ExtratoUl extratoProps={data.statements}/>
+                <div className="sm:m-10 md:mx-40 lg:m-0 px-4 py-4 space-y-6">
+                    <h1 className="text-3xl">Extrato Bancario</h1>
+                    <ExtratoUl extratoProps={data.statements} cpf={session?.user.cpf}/>
                 </div>
             )
         }
