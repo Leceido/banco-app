@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className="bg-indigo-600 text-white flex flex-col sm:flex-row px-8 sm:py-4 justify-center text-xl">
-            <div className="text-center hidden md:flex flex-col flex-none justify-center items-center ">
+        <div className="bg-indigo-600 text-white flex flex-col sm:flex-row px-8 sm:py-4 justify-center text-xl ">
+            <div className="text-center hidden md:flex flex-col flex-none justify-center items-center w-1/4">
                 <FontAwesomeIcon className="text-6xl" icon={faBuildingColumns} />
                 <h1>Banco App</h1>
             </div>
@@ -24,7 +24,7 @@ export default function Footer() {
                     <Link className="hover:text-gray-200 hover:underline" href="#">Pagar</Link>
                 </div>
             </div>
-            <div className="border-l-2 border-white"></div>
+            <div className="border-l-2 border-white flex-none"></div>
             <div className="m-3 sm:mx-16 grow">
                 <h1 className="text-2xl">Contatos</h1>
                 <hr className="w-40 mb-2"/>

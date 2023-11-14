@@ -64,17 +64,24 @@ export default function Transferir({ token, beneficiary_cpf }: any) {
     }
 
     return (
-        <div>
-            <form action="">
-                <label htmlFor="valor">Digite o valor: </label>
-                <input
-                    type="number"
-                    name="valor"
-                    id="valor"
-                    value={valor.toString()}
-                    onChange={(e) => setValor(Number(e.target.value))}
-                />
-                <button onClick={transferencia}>Transferir</button>
+        <div className="">
+            <form action="" className="space-x-2">
+                <div className="flex flex-col space-y-4">
+                    <div className="text-3xl">
+                        <label className="" htmlFor="valor">R$ </label>
+                        <input
+                            className="px-1 w-[50%] outline-none" 
+                            type="number"
+                            name="valor"
+                            id="valor"
+                            placeholder="00,00"
+                            onChange={(e) => setValor(Number(e.target.value))}
+                        />
+                    </div>
+                    <div>
+                        <button className="rounded-full bg-indigo-600 hover:bg-indigo-500 p-3 text-white text-sm md:text-lg w-24" onClick={transferencia}>Transferir</button>
+                    </div>
+                </div>
             </form>
         </div>
     )

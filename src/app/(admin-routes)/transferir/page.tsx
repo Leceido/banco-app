@@ -17,8 +17,8 @@ export default async function Transferir() {
         if (response.ok) {
             const data = await response.json()
             return (
-                <div>
-                    <h1>Transferir</h1>
+                <div className="sm:m-10 md:mx-40 lg:m-0 p-4 space-y-4">
+                    <h1 className="text-3xl">Transferir</h1>
                     <TransferirUl usersProps={data.users}/>
                 </div>
             )
