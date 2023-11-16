@@ -21,7 +21,7 @@ export default function TransferirUl({ usersProps }: any) {
                             <div className="px-4 flex flex-row items-center justify-center hover:bg-gray-50">
                                 <div className="grow">
                                     <h1 className="text-md sm:text-lg text-indigo-600">{user.name}</h1>
-                                    <pre className="text-sm">{user.cpf}</pre>
+                                    <pre className="text-sm">CPF/CNPJ: {user.cpf}</pre>
                                     
                                 </div>
                                 <div className="">

@@ -85,16 +85,17 @@ export default function Cadastrar() {
                     <form className="space-y-6" action="" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="cpf" className="block text-sm font-medium leading-6 text-gray-900">
-                                CPF
+                                CPF/CNPJ
                             </label>
                             <div className='mt-2'>
                                 <input
                                     type="text"
                                     id='cpf'
                                     name="cpf"
+                                    placeholder="Apenas os numeros"
                                     required
                                     autoComplete="off"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 px-1 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     value={cpf}
                                     onChange={(e) => setCpf(e.target.value)}
                                 />
@@ -103,7 +104,7 @@ export default function Cadastrar() {
 
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
-                                Name
+                                Nome
                             </label>
                             <div className='mt-2'>
                                 <input
@@ -112,7 +113,7 @@ export default function Cadastrar() {
                                     name="name"
                                     required
                                     autoComplete="off"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 px-1 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     value={nome}
                                     onChange={(e) => setNome(e.target.value)}
                                 />
@@ -121,16 +122,17 @@ export default function Cadastrar() {
 
                         <div>
                             <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                                Password
+                                Senha
                             </label>
                             <div className="mt-2">
                                 <input
                                     type="password"
                                     name="password"
                                     id="password"
+                                    placeholder="Senha numerica"
                                     required
                                     autoComplete="off"
-                                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md border-0 px-1 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
