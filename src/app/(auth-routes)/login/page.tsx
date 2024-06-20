@@ -16,7 +16,7 @@ export default function Home() {
         event.preventDefault()
 
         const response = await toast.promise(
-            fetch('https://banco-api.onrender.com/', {
+            fetch(`${process.env.API_URL}`, {
                 method: 'GET',
                 headers: {
                     'Content-type': 'application/json'
